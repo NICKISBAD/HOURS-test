@@ -4,3 +4,43 @@ local char = require(game.ReplicatedStorage.Creatures.Host [Class])
  char.Stats.Speed = Speed
  char.Stats.MaxHealth = MaxHp
  char.Stats.HealthRegen = HPRegen
+--------------------------------------------------------------------------------------------------------------
+--Classes
+
+local Classes = {
+		                  "Class1",
+                   "Class2",
+                  "Class3",
+                 "Class4",
+                "Class5",
+               "Class6",
+              "Class7",
+             "Class8",
+            "Class9",
+           "Class999",
+         "Class01",
+        "Class0",
+       "Class5318008",
+      "ClassDuck",
+     "ClassDuckMinion",
+    "Class999Minion",
+   "Class5318008Summon",
+  "Class1338"
+}
+--------------------------------------------------------------------------------------------------------------
+--Notification Function
+local function Notification(Title, Text)
+    game.StarterGui:SetCore("SendNotification", {
+    Title = Title,
+    Text = Text,
+    Duration = 5,
+    })
+end
+--------------------------------------------------------------------------------------------------------------
+--SpellCheck
+
+if not table.find(Classes, Class) then
+ Notification("Notification", "Stand name typed incorrectly.")
+    end
+end
+--------------------------------------------------------------------------------------------------------------
