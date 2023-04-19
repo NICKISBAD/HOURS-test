@@ -1,0 +1,13 @@
+_G.Class = "Class1"
+
+_G.Power = 0.5
+_G.Speed = 16
+_G.MaxHP = 100
+_G.HPRegen = 0.333333333
+
+local char = require(game.ReplicatedStorage.Creatures.Host [_G.Class])
+
+char.Speed = _G.Speed
+char.Power = _G.Power
+char.MaxHealth = _G.MaxHP
+char.HealthRegen = _G.HPRegen
