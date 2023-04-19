@@ -1,0 +1,6 @@
+local char = require(game.ReplicatedStorage.Creatures.Host [Class])
+--------------------------------------------------------------------------------------------------------------
+ char.Stats.Power = Power
+ char.Stats.Speed = Speed
+ char.Stats.MaxHealth = MaxHp
+ char.Stats.HealthRegen = HPRegen
