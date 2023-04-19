@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------------------------------------
-local char = require(game.ReplicatedStorage.Creatures.Host [Class])
+local char = require(game.ReplicatedStorage.Creatures.Host [getgenv().Class])
 --------------------------------------------------------------------------------------------------------------
  char.Stats.Power = Power
  char.Stats.Speed = Speed
