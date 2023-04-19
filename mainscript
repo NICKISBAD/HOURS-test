@@ -1,13 +1,16 @@
-_G.Class = "Class1"
+--Config
 
-_G.Power = 0.5
-_G.Speed = 16
-_G.MaxHP = 100
-_G.HPRegen = 0.333333333
+local Class = "Class1" -- Set Whatever Host you want here.
+local Power = 0.5 -- This is your power multiplier, Each .5 is a x1.5 multiplier
+local Speed = 99 -- This is your movement speed, Each number accounts for 3% of your walkspeed
+local MaxHp = 100 -- This is how much HP you're limited to
+local HPRegen = 0.3333333 -- This is how fast you regen HP
 
-local char = require(game.ReplicatedStorage.Creatures.Host [_G.Class])
+-- Actual code 
 
-char.Speed = _G.Speed
-char.Power = _G.Power
-char.MaxHealth = _G.MaxHP
-char.HealthRegen = _G.HPRegen
+local char = require(game.ReplicatedStorage.Creatures.Host [Class])
+
+ char.Stats.Power = Power
+ char.Stats.Speed = Speed
+ char.Stats.MaxHealth = MaxHp
+ char.Stats.HealthRegen = HPRegen
