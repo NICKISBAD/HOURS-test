@@ -1,4 +1,3 @@
---------------------------------------------------------------------------------------------------------------
 local char = require(game.ReplicatedStorage.Creatures.Host [getgenv().Class])
 --------------------------------------------------------------------------------------------------------------
  char.Stats.Power = Power
@@ -6,25 +5,4 @@ local char = require(game.ReplicatedStorage.Creatures.Host [getgenv().Class])
  char.Stats.MaxHealth = MaxHp
  char.Stats.HealthRegen = HPRegen
 --------------------------------------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------------------------------------
-
- print("Class1 = Invader")
- print("Class2 = Prophet")
- print("Class3 = Witness")
- print("Class4 = Artisan")
- print("Class5 = Vestige")
- print("Class6 = Visitor")
- print("Class7 = Subject")
- print("Class8 = Dreamer (Gamepass)")
- print("Class9 = Parting")
- print("Class0 = HotRash")
- print("Class01 = Equinox")
- print("Class999 = Bloxxerman")
- print("Class999Minion = Bloxxer's Minions")
- print("ClassDuck = Buffoon")
- print("ClassDuckMinion = Buffoon's minions")
- print("Class5318008 = Ronin")
- print("Class5318008Summon = Ronin's Minions")
- print("Class1337 = Hellion")
 
