@@ -27,8 +27,4 @@ local char = require(game.ReplicatedStorage.Creatures.Host [getgenv().Class])
  print("Class5318008 = Ronin")
  print("Class5318008Summon = Ronin's Minions")
  print("Class1337 = Hellion")
- game.StarterGui:SetCore("SendNotification", {
- Title = "Printed";
- Text = "Press F9 to see all Host File names or type /console in chat.";
- Duration = 6;
- })
+
