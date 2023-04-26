@@ -6,3 +6,47 @@ local char = require(game.ReplicatedStorage.Creatures.Host [getgenv().Class])
  char.Stats.MaxHealth = MaxHp
  char.Stats.HealthRegen = HPRegen
 --------------------------------------------------------------------------------------------------------------
+| Helper |
+--------------------------------------------------------------------------------------------------------------
+function Callback(answer)
+    if answer == "Yes" then
+ print("Class1 = Invader")
+ print("Class2 = Prophet")
+ print("Class3 = Witness")
+ print("Class4 = Artisan")
+ print("Class5 = Vestige")
+ print("Class6 = Visitor")
+ print("Class7 = Subject")
+ print("Class8 = Dreamer (Gamepass)")
+ print("Class9 = Parting")
+ print("Class0 = HotRash")
+ print("Class01 = Equinox")
+ print("Class999 = Bloxxerman")
+ print("Class999Minion = Bloxxer's Minions")
+ print("ClassDuck = Buffoon")
+ print("ClassDuckMinion = Buffoon's minions")
+ print("Class5318008 = Ronin")
+ print("Class5318008Summon = Ronin's Minions")
+ print("Class1337 = Hellion")
+ game.StarterGui:SetCore("SendNotification", {
+ Title = "Printed";
+ Text = "Press F9 to see all Host File names or type /console in chat.";
+ Duration = 6;
+ })
+    elseif answer == "No" then
+        print("Names have not been printed")
+    end
+end
+
+
+local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "Welcome!";
+Text = "Would you like a list of all the host file names?";
+Duration = 5;
+Button1 = "Yes";
+Button2 = "No";
+Callback = Bindable;
+})
